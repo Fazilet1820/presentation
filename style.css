@@ -1,0 +1,47 @@
+.container {
+  margin: 10%, 10%, 20%, 10%;
+  background-color: rgba(247, 214, 204, 0.911);
+}
+.text-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.item-header {
+  cursor: pointer;
+  padding: 2%;
+  margin: 0;
+}
+.item-content {
+  display: none;
+}
+
+.text-item.active .item-content {
+  display: flex;
+  align-items: center;
+}
+
+.text-item.active .images {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+.header {
+  background-color: rgba(210, 107, 75, 0.911);
+  text-align: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+h1 {
+  color: black;
+}
+
+.images {
+  display: none;
+}
+
+.footer {
+  padding-top: 0;
+  background-color: rgba(210, 107, 75, 0.911);
+  padding: 2%;
+}

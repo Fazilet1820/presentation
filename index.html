@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fazilet Senol</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Fazilet Senol CV och mål</h1>
+      </div>
+
+      <div class="Presentation">
+        <ol>
+          <li class="text-item">
+            <h2 class="item-header">Om mig</h2>
+            <p class="item-content">
+              Jag är Fazilet och från Turkiye. Jag har bott i Sverige i 4 år med
+              min man och 2 barn. Efter universitetet studerade jag för en
+              magisterexamen och arbetade som lärare i 3 år i mitt land. Numera
+              studerar jag för att bli javautvecklare på Teknikhögskolan i
+              Göteborg.
+            </p>
+            <img
+              class="images"
+              src="images/Fazilet Senol picture.jpg"
+              alt="Fazilet"
+            />
+
+            <img
+              class="images"
+              src="images/My_family.jpg"
+              alt="Senol family "
+            />
+          </li>
+          <li class="text-item">
+            <h2 class="item-header">Om mina interessen</h2>
+            <p class="item-content">
+              Jag är intresserad av att läsa böcker, umgås med mina vänner/ min
+              familj och resa med dem både inom och utanför landet. Om jag har
+              tid gillar jag också att baka och dekorera födelsedagstårtor och
+              dela med mig av bilderna på mina konton i sociala medier. Dem
+              följande är några av mina tårtor.
+            </p>
+
+            <img
+              class="images"
+              src="images/IMG-20240608-WA0025.jpg"
+              alt="Tårta"
+            />
+            <img
+              class="images"
+              src="images/IMG-20240608-WA0026.jpg"
+              alt="Tårta"
+            />
+            <img
+              class="images"
+              src="images/IMG-20240608-WA0027.jpg"
+              alt="Tårta"
+            />
+            <img
+              class="images"
+              src="images/IMG-20240608-WA0028.jpg"
+              alt="Tårta"
+            />
+
+            <img
+              class="images"
+              src="images/IMG-20240608-WA0029.jpg"
+              alt="Tårta"
+            />
+          </li>
+          <li class="text-item">
+            <h2 class="item-header">Varför denna kurs?</h2>
+            <p class="item-content">
+              Jag har valt den här kursen för att förbättra mina kunskaper i
+              frontend och kursplanen verkar ha utformats för att säkerställa
+              detta. I min frontend kurs tider var jag och mina barn sjuk. Så
+              kunde jag inte focusera bra i den där tiden. Tack vare denna kurs
+              vill jag memorera mina kunskaper och lära mig nya saker inom
+              ämnet.
+            </p>
+          </li>
+          <li class="text-item">
+            <h2 class="item-header">Målbetyg</h2>
+            <p class="item-content">
+              Det är inte så viktigt målbetyg för mig. Jag ville bara vara
+              intresserad att koda i sommaren för att inte glömma
+            </p>
+          </li>
+          <li class="text-item">
+            <h2 class="item-header">Mer</h2>
+            <p class="item-content">
+              Jag hoppas att jag kan klara av mina mål i den här kursen. <br />
+              Jag vill också informera att jag inte är så bra på svenska. Men
+              jag försöker använda alla möjligheter för att prata svenska.
+              <br />
+              Med vänliga hälsningar
+            </p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="footer">
+        <div class="contact">
+          <h4>Kontakt uppgifter</h4>
+          <p>Mobilnummer: 076 742 59 00</p>
+          <p>Email adress: senofazilet1820@gmail.com</p>
+          <a href="https://www.linkedin.com/in/fazilet-senol-3711b02a7/"
+            >LinkedIn</a
+          >
+          <p>&copy; 2024 Fazilet Senol</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var items = document.querySelectorAll(".text-item");
+
+        items.forEach(function (item) {
+          item.addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+              this.classList.remove("active");
+            } else {
+              items.forEach(function (item) {
+                item.classList.remove("active");
+              });
+              this.classList.add("active");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
